@@ -11,7 +11,7 @@ pipeline {
                 step {
                     when {
                         expression {
-                            File("/path-to-file").exists()
+                            File("/branch2_1/pyTest1.py").exists()
                         }
                     }
                     echo 'py file exists'
@@ -19,7 +19,7 @@ pipeline {
                 step {
                     when {
                         expression {
-                            !File("/path-to-file").exists()
+                            !File("/branch2_1/pyTest1.py").exists()
                         }
                     }
                     echo '404: file not exists'
