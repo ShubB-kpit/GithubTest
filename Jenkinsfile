@@ -10,7 +10,7 @@ pipeline {
             steps {
                 
                 script {
-                    if(fileexists("./branch2_1/pyTest1.py")) {
+                    if(fileExists("./branch2_1/pyTest1.py")) {
                         echo 'py file exists'
                     }
                     else {
