@@ -10,7 +10,12 @@ pipeline {
             steps {
                 
                 script {
-                    File("/branch2_1/pyTest1.py").exists() ? (echo 'py file exists') : (echo '404: file not exists')
+                    if(File("/branch2_1/pyTest1.py").exists()) {
+                        echo 'py file exists'
+                    }
+                    else {
+                        echo '404: file not exists'
+                    }
                 }
                 
             }
