@@ -1,25 +1,16 @@
 pipeline {
     agent any
+     
     stages {
-        stage('Welcome Step') {
-            steps { 
-                echo 'Welcome to the LambdaTest'
+        stage('Ok') {
+            steps {
+                echo "Ok"
             }
         }
-        stage('check if py file exists'){
-            steps {
-                
-                script {
-                    if(fileExists("./branch2_1/pyTest1.py")) {
-                        echo 'py file exists'
-                    }
-                    else {
-                        echo '404: file not exists'
-                    }
-                }
-                
-            }
-            
+    }
+    post {
+        always {
+            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
         }
     }
 }
