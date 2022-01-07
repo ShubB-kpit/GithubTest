@@ -27,7 +27,7 @@ rpipeline {
                     
                     def bb = Jenkins.instance.getItemByFullName('multiP/branch2')
                     echo "Last Success Build Name: ${bb.getLastSuccessfulBuild()}"
-                    echo "Description: ${bb.description}"
+                    echo "Description: ${bb.getFullDisplayName()}"
                     echo "${env.JOB_NAME}"
                 }
             }
