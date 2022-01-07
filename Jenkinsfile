@@ -1,17 +1,14 @@
 pipeline {
-    agent any
-     
-    stages {
-        stage('Ok') {
-            steps {
-                echo "Ok"
-            }
-        }
+  agent any
+  parameters {
+    string(name: 'STATEMENT', defaultValue: 'hello; ls /', description: 'What should I say?')
+  }
+  stages {
+    stage('Example') {
+      steps {
+        /* CORRECT */
+        sh('echo ${STATEMENT}')
+      }
     }
-    post {
-        always {
-            mail to: shubham.bawankar@kpit.com, subject: 'The Pipeline failed :('
-
-        }
-    }
+  }
 }
