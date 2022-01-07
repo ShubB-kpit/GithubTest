@@ -10,7 +10,7 @@ pipeline {
         stage('build name') {
             steps {
                 script {
-                    def buildNumber = Jenkins.instance.getItem('multiP').getItem('branch2').lastSuccessfulBuild.number
+                    def buildNumber = 0
                     echo buildNumber
                 }
             }
