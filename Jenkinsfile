@@ -25,7 +25,7 @@ rpipeline {
             steps {
                 script{
                     
-                    def bb = Jenkins.instance.getItemByFullName('multiP/branch2').lastSuccessfulBuild
+                    def bb = Jenkins.instance.getItemByFullName('multiP/branch2').lastSuccessfulBuild.displayName
                     echo "Last Success Build Name: ${bb.getClass()}"
                     //echo "Description: ${bb.getUpUrl()}"
                     echo "${env.JOB_NAME}"
