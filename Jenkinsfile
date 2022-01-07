@@ -1,4 +1,4 @@
-pipeline {
+rpipeline {
     agent any
     stages {
         stage('Welcome Step') {
@@ -27,7 +27,7 @@ pipeline {
                     
                     def bb = Jenkins.instance.getItemByFullName('multiP/branch2')
                     echo "Last Success Build Name: ${bb.getLastSuccessfulBuild()}"
-                    echo "Description: ${bb.getDescription()}"
+                    echo "Description: ${bb.description}"
                     echo "${env.JOB_NAME}"
                 }
             }
