@@ -21,5 +21,13 @@ pipeline {
             }
             
         }
+        stages('test new') {
+            steps {
+                script{
+                    def lastSuccessBuildName = Jenkins.instance.getItem(env.JOB_NAME).lastSuccessfulBuild.displayName
+                    echo "Last Success Build Name: ${lastSuccessBuildName}"
+                }
+            }
+        }
     }
 }
