@@ -18,7 +18,8 @@ pipeline {
     }
     post {
         always {
-            emailext body: 'testing',subject: 'testing', to: 'shubham.bawankar@kpit.com'
+            mail to: shubham.bawankar@kpit.com, subject: 'The Pipeline failed :('
+
         }
     }
 }
