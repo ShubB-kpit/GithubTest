@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script{
                     
-                    def lastSuccessBuildName = Jenkins.instance.getItemByFullName(env.JOB_NAME).lastSuccessfulBuild.displayName
+                    def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').lastSuccessfulBuild.displayName
                     echo "Last Success Build Name: ${lastSuccessBuildName}"
                     
                     echo "${env.JOB_NAME}"
