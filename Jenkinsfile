@@ -26,7 +26,7 @@ pipeline {
                     def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').lastSuccessfulBuild.displayName
                     echo "Last Success Build Name: ${lastSuccessBuildName}"
                     
-                    echo "Description: ${bb.getUpUrl()}"
+                    echo "Description: ${lastSuccessBuildName.getUpUrl()}"
                     echo "${env.JOB_NAME}"
                 }
             }
