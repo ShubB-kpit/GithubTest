@@ -23,8 +23,8 @@ pipeline {
         stage('test new') {
             steps {
                 script {
-                    def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').lastSuccessfulBuild.displayName
-                    echo "Last Success Build Name: ${lastSuccessBuildName}"
+                    def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2')
+                    echo "class type: ${lastSuccessBuildName.getClass()}"
                     
                     //echo "Description: ${lastSuccessBuildName.getUpUrl()}"
                     //echo "${env.JOB_NAME}"
