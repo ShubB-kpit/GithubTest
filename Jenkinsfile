@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2')
-                    echo "class type: ${lastSuccessBuildName.getClass()}"
+                    echo "class type: ${lastSuccessBuildName.getSearchUrl()}"
                     
                     //echo "Description: ${lastSuccessBuildName.getUpUrl()}"
                     //echo "${env.JOB_NAME}"
