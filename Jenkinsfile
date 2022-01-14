@@ -26,7 +26,7 @@ pipeline {
                     def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
                     echo "class type: ${lastSuccessBuildName.getUrl()}"
                     
-                    //echo "Description: ${lastSuccessBuildName.getUpUrl()}"
+                    echo "Description: ${lastSuccessBuildName.getAbsoluteUrl()}"
                     //echo "${env.JOB_NAME}"
                     
                     echo "BUILD_NUMBER :: ${BUILD_NUMBER}"
