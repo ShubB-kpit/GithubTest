@@ -43,7 +43,7 @@ pipeline {
                     echo "JENKINS_URL :: ${JENKINS_URL}"
                     echo "BUILD_URL ::${BUILD_URL}"
                     echo "JOB_URL :: ${JOB_URL}"
-                    
+                    echo "CHANGE_ID :: ${env.CHANGE_ID}"
                 }
             }
         }
