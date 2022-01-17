@@ -50,7 +50,7 @@ pipeline {
     }
     post {
     always {
-       emailext to: 'shubham.bawankar@kpit.com',
+       mail to: 'shubham.bawankar@kpit.com',
           subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
           body: "${env.BUILD_URL} has result ${currentBuild.result}"
     }
