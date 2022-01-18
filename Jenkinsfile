@@ -15,10 +15,10 @@ pipeline {
                         var1 = bat(script:'python ./branch2_1/test_pySh.py', returnStdout: true).trim()
                         var2 = var1[var1.indexOf('<html>')..(var1.indexOf('</html>')+7)]
                         writeFile file: 'smpl.txt', text: var2
-                        // mail to:'shubham.bawankar@kpit.com',
-                        // mimeType: 'text/html',
-                        // subject:'test email1',
-                        // body: var2
+                        mail to:'shubham.bawankar@kpit.com',
+                        mimeType: 'text/html',
+                        subject:'test email1',
+                        body: var2
 //                         body:"""<html><head>
 // <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="Generator" content="Microsoft Word 15 (filtered medium)"><style>
 // <!--
