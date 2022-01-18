@@ -14,6 +14,11 @@ pipeline {
                         echo 'py file exists'
                         var1 = bat(script:'python ./branch2_1/test_pySh.py', returnStdout: true).trim()
                         echo "${var1}"
+                        mail to:'shubham.bawankar@kpit.com',
+                        subject:'test email1',
+                        body:var1
+                        
+                        
                     }
                     else {
                         echo '404: file not exists'
