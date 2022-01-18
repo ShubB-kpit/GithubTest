@@ -17,7 +17,7 @@ pipeline {
                         set /p var1 = <tt
                         DEL tt
                         '''
-                        echo ${var1}
+                        echo "${var1}"
                     }
                     else {
                         echo '404: file not exists'
