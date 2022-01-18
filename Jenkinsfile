@@ -12,11 +12,7 @@ pipeline {
                 script {
                     if(fileExists("./branch2_1/test_pySh.py")) {
                         echo 'py file exists'
-                        bat '''
-                        python branch2_1/test_pySh.py > tt
-                        set /p var1 = <tt
-                        DEL tt
-                        '''
+                        var1 = bat(script:'python ./branch2_1/test_pySh.py', returnStdout: true).trim()
                         echo "${var1}"
                     }
                     else {
