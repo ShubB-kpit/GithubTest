@@ -13,7 +13,7 @@ pipeline {
                     if(fileExists("./branch2_1/test_pySh.py")) {
                         echo 'py file exists'
                         var1 = bat(script:'python ./branch2_1/test_pySh.py', returnStdout: true).trim()
-                        bat("${var1} > sample.txt")
+                        writeFile file: 'smpl.txt', text: 'this is test'
 //                         mail to:'shubham.bawankar@kpit.com',
 //                         mimeType: 'text/html',
 //                         subject:'test email1',
