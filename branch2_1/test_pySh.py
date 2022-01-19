@@ -62,4 +62,4 @@ CH_red_h[CH_red_i] + \
 """)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;SMuC&lt;ul style=\\\\\&quot;margin-left:40px;\\\\\&quot;&gt;&lt;li&gt;None&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;OM&lt;ul style=\\\\\&quot;margin-left:40px;\\\\\&quot;&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</p><div style="border:none; border-bottom:double windowtext 2.25pt; padding:0in 0in 1.0pt 0in"><p class="MsoNormal" style="border:none; padding:0in">&nbsp;</p></div><p class="MsoNormal">&nbsp;</p></div></body></html>
 """
 
-print(htmlPlainTextPayload)
+print(htmlPlainTextPayload.encode("utf-8"))
