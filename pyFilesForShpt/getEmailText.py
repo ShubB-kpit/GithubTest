@@ -73,16 +73,19 @@ def getEmailText(pdxLocationURL, pdxName, commitHash):
     print(htmlPlainTextPayload)
     
 if __name__ == "__main__":
-    try:
-        a = sys.argv[1]
-    except:
-        a = "dummy build url"
-    try:
-        b = sys.argv[2]
-    except:
-        b = "dummy pdx name"
-    try:
-        c = sys.argv[3]
-    except:
-        c = "dummy commit hash"
+    # try:
+    #     a = sys.argv[1]
+    # except:
+    #     a = "dummy build url"
+    # try:
+    #     b = sys.argv[2]
+    # except:
+    #     b = "dummy pdx name"
+    # try:
+    #     c = sys.argv[3]
+    # except:
+    #     c = "dummy commit hash"
+    a = sys.argv[1]
+    b = sys.argv[2]
+    c = sys.argv[3]
     getEmailText(a, b, c)
