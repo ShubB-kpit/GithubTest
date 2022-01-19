@@ -3,9 +3,11 @@ pipeline {
     stages {
         stage('Welcome Step') {
             steps { 
-                echo 'Welcome to the LambdaTest'
-                def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
-                echo "last Success Build Name: ${lastSuccessBuildName.getAbsoluteUrl()}"
+                script {
+                    echo 'Welcome to the LambdaTest'
+                    def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
+                    echo "last Success Build Name: ${lastSuccessBuildName.getAbsoluteUrl()}"
+                }
             }
         }
         stage('check if py file exists'){
