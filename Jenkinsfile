@@ -17,7 +17,7 @@ pipeline {
                         writeFile file: 'smpl.txt', text: var2
                         mail to:'shubham.bawankar@kpit.com',
                         mimeType: 'text/html',
-                        subject:'1upload2Sharepoint_test',
+                        subject:'pload2Sharepoint_test',
                         body: var2
 //                         body:"""<html><head>
 // <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="Generator" content="Microsoft Word 15 (filtered medium)"><style>
