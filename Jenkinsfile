@@ -16,7 +16,7 @@ pipeline {
                         def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
                         echo "last Success Build Name: ${lastSuccessBuildName.getAbsoluteUrl()}"
 
-                        var1 = bat(script:'python ./pyFilesForShpt/getEmailText.py a b c', returnStdout: true).trim()
+                        var1 = bat(script:'python ./pyFilesForShpt/getEmailText.py', returnStdout: true).trim()
                         echo "got var1"
                         var2 = var1[var1.indexOf('<html>')..(var1.indexOf('</html>')+6)]
                         echo "got var2"

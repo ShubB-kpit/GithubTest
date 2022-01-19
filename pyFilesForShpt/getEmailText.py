@@ -2,9 +2,9 @@ from datetime import date, timedelta
 import sys
 
 
-pdxLocationURL = sys.argv[1]
-pdxName = sys.argv[2]
-commitHash = sys.argv[3]
+pdxLocationURL = ""#sys.argv[1]
+pdxName = ""#sys.argv[2]
+commitHash = ""#sys.argv[3]
 
 b4today = (date.today()-timedelta(days=1)).strftime("%d/%m/%Y")
 
