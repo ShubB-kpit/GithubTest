@@ -6,7 +6,7 @@ b4today = (date.today()-timedelta(days=1)).strftime("%d/%m/%Y")
 pdxName = "OOOOOOOO_123456F7.123_456_789"
 hglght_shp = ["highlightColorGreen","highlightColorRed"]
 hglght_html = ["lime","red"]
-hglght_indx = 0
+hglght_indx = 1
 
 CH_red  = ["""(<span style="font-size:13.5pt; font-family:&quot;Segoe UI&quot;,sans-serif; color:#323130">UnChanged</span>)""", \
 """(<span style="font-size:13.5pt; font-family:&quot;Segoe UI&quot;,sans-serif; color:#E81123">Changed&nbsp;</span>)"""]
