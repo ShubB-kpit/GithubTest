@@ -22,7 +22,7 @@ pipeline {
                         echo "got smpl.txt"
                         mail to:'shubham.bawankar@kpit.com',
                         mimeType: 'text/html',
-                        subject:'upload2Sharepoint_test',
+                        subject:'load2Sharepoint_test',
                         body: var2   
                     }
                     else {
