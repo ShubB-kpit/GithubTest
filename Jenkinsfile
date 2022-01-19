@@ -18,7 +18,7 @@ pipeline {
                 script {
                     if(fileExists("./pyFilesForShpt/getEmailText.py")) {
                         echo 'py file exists'
-                        var1 = bat(script:'python ./pyFilesForShpt/getEmailText.py ${lastSuccessBuildName} arg2 arg3', returnStdout: true).trim()
+                        var1 = bat(script:'python ./pyFilesForShpt/getEmailText.py \${lastSuccessBuildName} arg2 arg3', returnStdout: true).trim()
                         echo "got var1"
                         var2 = var1[var1.indexOf('<html>')..(var1.indexOf('</html>')+6)]
                         echo "got var2"
