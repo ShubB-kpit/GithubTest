@@ -55,7 +55,7 @@ CH_red[CH_red_i] + \
 hglght_shp[hglght_indx] + \
 """\\\\\&quot;&gt;&lt;b&gt;""" + \
 pdxName + \
-"""&lt;/b&gt;&lt;/span&gt;&amp;nbsp;(G123BF4 Engineering build, &lt;strong&gt;Cmake build&lt;/strong&gt;)&lt;/p&gt;&lt;p&gt;​​​​​​​​​​​​​​&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Created on """ + \
+"""&lt;/b&gt;&lt;/span&gt;&amp;nbsp;(G123BF4 Engineering build, &lt;strong&gt;Cmake build&lt;/strong&gt;)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Created on """ + \
 b4today + \
 """&lt;ul style=\\\\\&quot;margin-left:40px;\\\\\&quot;&gt;&lt;li&gt;&lt;b&gt;THIS IS A CM D2.0 - SAMPLE SOFTWARE&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;PDXlocation&lt;/u&gt;: &lt;/li&gt;&lt;li&gt;&lt;u&gt;PDX Template&lt;/u&gt;:&amp;nbsp;&lt;strong&gt;PT01_template.123_456_789.pdx&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;u&gt;CuC/ PuC/ SMuC Git Hash&lt;/u&gt;: 12345vfv67a89aa0123adfvh4567890dc173&lt;/li&gt;&lt;li&gt;CuC&lt;ul&gt;&lt;li&gt;1234: LIDAR :: Basae :: rfga :: 143123 - some comments&lt;/li&gt;&lt;li&gt;sda&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;PuC&lt;ul style=\\\\\&quot;margin-left:40px;\\\\\&quot;&gt;&lt;li&gt;None&lt;ul style=\\\\\&quot;margin-left:40px;\\\\\&quot;&gt;&lt;li&gt;&lt;strong&gt;CvApp Innoviz&lt;/strong&gt; K123-v4&lt;strong&gt;_RC3&lt;/strong&gt;&amp;nbsp;(""" + \
 CH_red_h[CH_red_i] + \
