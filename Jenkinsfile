@@ -1,3 +1,5 @@
+def lastSuccessBuildName = ""
+
 pipeline {
     agent any
     stages {
@@ -5,8 +7,8 @@ pipeline {
             steps { 
                 script {
                     echo 'Welcome to the LambdaTest'
-                    def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
-                    echo "last Success Build Name: ${lastSuccessBuildName.getAbsoluteUrl()}"
+                    lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild().getAbsoluteUrl()
+                    echo "last Success Build Name: ${lastSuccessBuildName}"
                 }
             }
         }
@@ -16,7 +18,7 @@ pipeline {
                 script {
                     if(fileExists("./pyFilesForShpt/getEmailText.py")) {
                         echo 'py file exists'
-                        var1 = bat(script:'python ./pyFilesForShpt/getEmailText.py arg1 arg2 arg3', returnStdout: true).trim()
+                        var1 = bat(script:'python ./pyFilesForShpt/getEmailText.py ${lastSuccessBuildName} arg2 arg3', returnStdout: true).trim()
                         echo "got var1"
                         var2 = var1[var1.indexOf('<html>')..(var1.indexOf('</html>')+6)]
                         echo "got var2"
