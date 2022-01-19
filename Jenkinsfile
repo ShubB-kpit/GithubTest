@@ -13,8 +13,8 @@ pipeline {
                     if(fileExists("./branch2_1/test_pySh.py")) {
                         echo 'py file exists'
 
-                        def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
-                        echo "last Success Build Name: ${lastSuccessBuildName.getAbsoluteUrl()}"
+                        // def lastSuccessBuildName = Jenkins.instance.getItemByFullName('multiP/branch2').getLastSuccessfulBuild()
+                        // echo "last Success Build Name: ${lastSuccessBuildName.getAbsoluteUrl()}"
 
                         var1 = bat(script:'python ./branch2_1/test_pySh.py', returnStdout: true).trim()
                         echo "got var1"
