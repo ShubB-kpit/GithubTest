@@ -27,7 +27,7 @@ pipeline {
                     echo "class type: ${lastSuccessBuildName.getUrl()}"
                     
                     echo "Description: ${lastSuccessBuildName.getAbsoluteUrl()}"
-                    //echo "${env.JOB_NAME}"
+                    //echo "${env.JOB_NAME}" ..
                     
                     echo "BUILD_NUMBER :: ${BUILD_NUMBER}"
                     echo "BUILD_ID :: ${BUILD_ID}"
